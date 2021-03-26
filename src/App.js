@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import * as THREE from "three";
-import * as dat from "dat.gui";
+//import * as dat from "dat.gui";
 
 const loadTexture = (path) => {
   const textureLoader = new THREE.TextureLoader();
@@ -13,7 +13,7 @@ const Sphere = () => {
     const normalTexture = loadTexture("/normalMap.png");
 
     //Debug
-    const gui = new dat.GUI();
+    //const gui = new dat.GUI();
 
     //Canvas
     const canvas = document.querySelector("canvas.webgl");
